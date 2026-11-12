@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@500;600&display=swap');
+@import 'tailwindcss';
+
+:root { font-family: 'DM Mono', monospace; color: #f4f1ea; background: #000; font-synthesis: none; }
+* { box-sizing: border-box; }
+html, body, #app { width: 100%; height: 100%; margin: 0; overflow: hidden; background: #000; }
+body { min-width: 320px; }
+a, button { -webkit-tap-highlight-color: transparent; }
+.font-display { font-family: 'Space Grotesk', sans-serif; }
+.top-button, .icon-button { display: inline-flex; height: 32px; min-width: 32px; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,.25); background: rgba(255,255,255,.06); padding: 0 13px; font-size: 10px; text-transform: uppercase; letter-spacing: .14em; transition: background .2s, border-color .2s, color .2s; }
+.top-button:hover, .icon-button:hover { border-color: #fff; background: #fff; color: #000; }
+.icon-button { padding: 0; font-size: 15px; text-transform: none; letter-spacing: 0; cursor: pointer; }
+.dither-frame { position: relative; width: min(74vw, 600px); height: min(74vw, 600px); }
+.about-panel { box-shadow: 0 0 100px rgba(255,255,255,.06); }
+.eyebrow { margin: 0; font-size: 10px; text-transform: uppercase; letter-spacing: .18em; color: rgba(255,255,255,.45); }
+@media (max-width: 640px) { .dither-frame { width: min(92vw, 520px); height: min(92vw, 520px); } }
